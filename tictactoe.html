@@ -1,0 +1,86 @@
+---
+permalink: /tictactoe/
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>TicTacToe</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/res/tictactoe/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/res/tictactoe/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/res/tictactoe/assets/favicon-16x16.png">
+    <link rel="manifest" href="/res/tictactoe/assets/site.webmanifest">
+    <link rel="mask-icon" href="/res/tictactoe/assets/safari-pinned-tab.svg" color="#5481f2">
+    <link rel="shortcut icon" href="/res/tictactoe/assets/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/res/tictactoe/assets/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Tictactoe">
+    <link rel="stylesheet" type="text/css" href="/res/style.css" />
+  </head>
+  <body>
+    <a href="/tictactoe/"><img
+        src="/res/tictactoe/tictactoe.svg"
+        alt="tictactoe"
+        class="logo"
+        width="96"
+        height="96"
+    /></a>
+    <h1>
+      <a id="tictactoe" class="anchor" aria-hidden="true" href="#tictactoe"></a>
+      Tic Tac Toe with Minimax Algorithm
+    </h1>
+    <n-grid columns="1" columns-m="1" columns-s="1">
+      <n-cell span="1" span-m="1" span-s="1">
+        <table class="ttt">
+          <tr>
+            <td class="cell" id="0"></td>
+            <td class="cell" id="1"></td>
+            <td class="cell" id="2"></td>
+          </tr>
+          <tr>
+            <td class="cell" id="3"></td>
+            <td class="cell" id="4"></td>
+            <td class="cell" id="5"></td>
+          </tr>
+          <tr>
+            <td class="cell" id="6"></td>
+            <td class="cell" id="7"></td>
+            <td class="cell" id="8"></td>
+          </tr>
+        </table>
+        <n-grid columns="2">
+          <n-cell span="1">
+            <div>
+              <button onClick="startGame()">Start Over</button>
+            </div>
+          </n-cell>
+          <n-cell span="1">
+            <div class="endgame">
+              <div class="text"></div>
+            </div>
+          </n-cell>
+        </n-grid>
+      </n-cell>
+      <h2><a id="description" class="anchor" aria-hidden="true" href="#description"></a>Description</h2>
+      <p>
+        <strong>What is this thingy?</strong>
+        <br>
+        This is a simple Tic Tac Toe game with a <a href = "https://en.wikipedia.org/wiki/Minimax">minimax algorithm</a>. Each move is calculated by the computer and made to be unbeatable.
+      </p>
+      <p>
+        <strong>How does it work?</strong>
+        <br>
+        The demo was implemented by creating a recursive function that simulates all possible moves by both players and returns the optimal move for the computer player. The function considers the current game state, the player whose turn it is, and the desired depth of the search, and then use these inputs to determine the best move for the current player, taking into account the potential moves of the other player and the ultimate goal of the game (to win or draw).
+      </p>
+      </n-grid>
+      <br>
+      <p>© 2022 <a href="/"> Nick Chen</a></p>
+    <script src="/res/tictactoe/tictactoe.js"></script>
+  </body>
+</html>
