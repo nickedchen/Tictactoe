@@ -5,7 +5,7 @@
 # Tictactoe
 Progressive web application of Tic-tac-toe. Made with simple css code and minimax algorithm.
 
-[Click Here to see the demo](https://nchen.me/tictactoe/)
+[Click here to see the demo](https://nchen.me/tictactoe/)
 
 ## How to install the app?
 
